@@ -1,0 +1,87 @@
+@font-face {
+    font-family: 'salsa';
+    src: url(Salsa-Regular.ttf);
+}
+@font-face {
+    font-family: "Dancing-script";
+    src: url(DancingScript-VariableFont_wght.ttf);
+}
+*{
+    margin: 0;
+    box-sizing: border-box;
+}
+body {
+    background-image: url(pexels-photo-1103970.jpeg);
+    background-position:center ;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-color: #09405D;
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    height: 100%;
+    min-width: 280px;
+    min-height: 500px;
+}
+.button {
+    border: 3px double #000000;
+    margin:2px;
+    height: 70px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    background-color:#c3ffecc7;
+    border-radius: 5px;
+    font-family: 'salsa', "Dancing-script";
+    font-size: 18px;
+}
+.button:hover{
+    background-color:#c3ffec;
+}
+#calculator {
+    display:grid;
+    grid-template-columns: repeat(4, 1fr);
+    justify-content: center;
+    align-content: center;
+    width: 280px;
+    height: 500px;
+    grid-row-gap: 0px;
+    border: #4f4848 3px solid;
+    border-radius: 5px;
+    margin-top: 30px;
+}
+#display {
+    grid-column:1/ -1;
+    height: 100px;
+    grid-row: span 2;
+    display: flex;
+    flex-direction: column;
+    background-color: #000000;
+    margin: 5px;
+    border-radius: 5px;
+    justify-content: space-evenly;
+    align-items: end;
+    font-family: 'salsa', "Dancing-script";
+    padding: 5px;
+}
+.clear {
+    grid-column:1/ 3;
+}
+.equals {
+    grid-column: 3/5;
+}
+.operand {
+    padding: 3px;
+    word-wrap: break-word;
+    word-break: break-all;
+}
+.first{
+    color:#b4b4b4;
+    font-size: 15px;
+}
+.second{
+    color:#ffffff;
+    font-size: 25px;
+}
